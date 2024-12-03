@@ -1,0 +1,523 @@
+*
+{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*INFO DE LA PAGINA*/
+
+.nav
+{
+    position: relative;
+    width: calc(100% - 20px);
+    height: max-content;
+    background: #c7c8e6;
+    padding: 10px;
+    text-align: right;
+
+    .home-nav
+    {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        right: 0px;
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(56, 56, 56);
+        background: transparent;
+    }
+}
+
+.header
+{
+    position: relative;
+    width: calc(100% - 30px);
+    background: #fbebf8;
+    padding: 40px 15px;
+
+    .main-p
+    {
+        position: relative;
+        width: 80%;
+        max-width: 1024px;
+        height: max-content;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .img-p
+        {
+            position: relative;
+            width: 40%;
+            display: inline-block;
+            vertical-align: middle;
+
+            .img
+            {
+                position: relative;
+                width: 100%;
+                border-radius: 3px;
+            }
+        }
+
+        .text
+        {
+            position: relative;
+            width: 45%;
+            display: inline-block;
+            vertical-align: middle;
+
+            .txt-title
+            {
+                position: relative;
+                width: max-content;
+                left: 20px;
+                font-family: 25px;
+                margin-bottom: 10px;
+            }
+
+            .txt-p
+            {
+                position: relative;
+                width: 100%;
+                left: 20px;
+                margin: 10px 0;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+        .text::after
+        {
+            position: absolute;
+            content: '';
+            top: 0%;
+            bottom: 0;
+            left: 0;
+            width: 10px;
+            height: 100%;
+            background: #f5bce5;
+            border-radius: 8px;
+        }
+    }
+}   
+
+.cards
+{
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .card
+    {
+        position: relative;
+        width: 200px;
+        height: 240px;
+        padding: 2%;
+        background: #fbebf8;
+        border-radius: 5px;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+
+        .card-title
+        {
+            position: relative;
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        .card-content
+        {
+            position: relative;
+            width: 100%;
+            line-height: 14px;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 20px 0;
+            height: 175px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .more-card
+        {
+            position: absolute;
+            cursor: pointer;
+            bottom: 10px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            background: #d382a2;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            transition: all 200ms;
+
+            .dot
+            {
+                position: relative;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #fff;
+            }
+        }
+
+        .more-card:hover
+        {
+            position: absolute;
+            cursor: pointer;
+            bottom: 10px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            background: #ff5096;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            transition: all 200ms;
+
+            .dot
+            {
+                position: relative;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #fff;
+            }
+        }
+
+        .more-card:hover:after
+        {
+            position: absolute;
+            content: 'Ver más';
+            top: 0%;
+            bottom: 0;
+            width: max-content;
+            padding: 3px;
+            transition: all 200ms;
+            left: calc(100% + 10px);
+            margin: auto;
+            background: #d3d3d3;
+            border-radius: 3px;
+        }
+    }
+}
+
+.articulos
+{
+    position: relative;
+    width: calc(100% - 30px);
+    background: #fbebf8;
+    padding: 40px 15px;
+
+    .articulos-title
+    {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        top: -20px;
+    }
+
+    .section-container
+    {
+        position: relative;
+        width: 100%;
+        max-width: 1024px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .articulo
+        {
+            position: relative;
+            width: 290px;
+            height: calc(320px - 100px);
+            background: #c7c8e6;
+            padding: 40px 20px;
+            margin: 20px 5%;
+
+            .articulo-number
+            {
+                position: relative;
+                display: block;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .title-articulo
+            {
+                position: relative;
+                width: 100%;
+                margin: 5px 0;
+                text-align: center;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            .description-articulo
+            {
+                position: relative;
+                width: 100%;
+                margin: 10px 0;
+                text-align: center;
+                font-weight: normal;
+                line-height: 14px;
+                font-size: 16px;
+            }
+
+            .see_book
+            {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                color: rgb(83, 83, 83);
+                font-size: 14px;
+                text-decoration: underline;
+                font-weight: 600;
+                transition: all 200ms;
+                cursor: pointer;
+            }
+
+            .see_book:hover
+            {
+                transition: all 200ms;
+                right: 10px;
+                font-weight: 600;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
+
+.cards-modal, .cards-modal-off
+{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #ffffffbb;
+    transition: all 200ms;
+    z-index: 200;
+
+    .modal-container
+    {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 750px;
+        max-height: 550px;
+        min-height: 320px;
+        height: max-content;
+
+        background: #fbebf8;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 50px;
+        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+
+        .modal-title
+        {
+            position: relative;
+            width: calc(100% - 100px);
+            margin: 10px 50px;
+            margin-top: 50px;
+        }
+
+        .modal-info
+        {
+            position: relative;
+            width: calc(100% - 100px);
+            margin: 10px 50px;
+
+            .modal-h
+            {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+                line-height: 18px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .modal-p, .modal-p-2
+            {
+                position: relative;
+                width: 100%;
+                margin: 20px 0;
+                font-size: 15px;
+            }
+            .modal-p-2
+            {
+                margin: 0px 0;
+                margin-bottom: 15px;
+            }
+
+        }
+
+        .close-modal
+        {
+            position: relative;
+            width: calc(100% - 80px);
+            margin: 20px 40px;
+            margin-bottom: 30px;
+            display: inline-block;
+            text-align: right;
+            .text
+            {
+                position: relative;
+                width: max-content;
+                height: max-content;
+                padding: 4px 20px;
+                border-radius: 3px;
+                cursor: pointer;
+                font-weight: 600;
+                background: #ffa6a6;
+                color: #000;
+                transition: all 200ms;
+            }
+
+            .text:hover
+            {
+                position: relative;
+                width: max-content;
+                height: max-content;
+                padding: 4px 20px;
+                border-radius: 3px;
+                cursor: pointer;
+                background: #ff8282;
+                font-weight: 600;
+                color: #000;
+                transition: all 200ms;
+
+            }
+        }
+
+        
+    }
+}
+
+.cards-modal-off
+{
+    transition: all 200ms;
+    transform: scale(0%);
+}
+
+
+/*CARRUSEL DE IMAGENES...*/
+
+.carrusel-simple
+{
+    position: relative;
+    width: calc(100% - 30px);
+    background: #fbebf8;
+    padding: 40px 15px;
+
+    .titulo-carrusel
+    {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+.carrusel {
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    background: transparent;
+}
+
+.carrusel-contenedor {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+flex: 0 0 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.imagenes {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+margin-bottom: 15px;
+}
+
+.imagenes img {
+width: 250px;
+object-fit: cover;
+border-radius: 5px;
+box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+}
+
+.texto {
+font-size: 1rem;
+text-align: center;
+color: #333;
+font-weight: 600;
+font-size: 18px;
+}
+
+.btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+width: 40px;
+height: 40px;
+padding: 10px;
+cursor: pointer;
+z-index: 1;
+border-radius: 50%;
+}
+
+.btn.prev {
+left: 10px;
+}
+
+.btn.next {
+right: 10px;
+}
+
+.btn:focus {
+outline: none;
+}

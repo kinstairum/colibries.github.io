@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Colibries</title>
+</head>
+<body>
+
+    <nav class="nav">
+        <a class="home-nav">HOME</a>
+    </nav>
+
+    <section class="header">
+        <article class="main-p">
+            <div class="img-p">
+                <img class="img" src="assets/img/colibries_logo.png">
+            </div>
+
+            <div class="text">
+
+                <h2 class="txt-title">Colibríes</h2>
+
+                <p class="txt-p">Los colibríes son pequeñas aves que destacan por su 
+                    agilidad en el vuelo y sus vibrantes colores.</p>
+
+                <p class="txt-p">Estas aves, únicas del continente americano, son 
+                    conocidas por su capacidad de batir las alas a gran velocidad, lo 
+                    que les permite mantenerse suspendidas en el aire mientras se alimentan 
+                    del néctar de las flores. Su papel en la naturaleza es crucial, ya que 
+                    actúan como polinizadores esenciales en diversos ecosistemas.</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <div class="card-title">
+                Características generales
+            </div>
+
+            <div class="card-content">
+                <p>
+                    Los colibríes son aves de pequeño tamaño, 
+                    reconocidas por sus plumajes relucientes que 
+                    brillan en tonos metálicos bajo la luz. Estas 
+                    tonalidades no solo los hacen visualmente impactantes, 
+                    sino que también los distinguen entre las aves más 
+                    llamativas del mundo.
+                </p>
+
+                <p>
+                    Se alimentan principalmente del néctar de diversas flores, 
+                    como especies de salvias...
+
+                </p>
+            </div>
+
+            <div class="more-card" onclick="showModal(1)">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">
+                Cultura e historia
+            </div>
+
+            <div class="card-content">
+                El nombre del género Eupherusa proviene del griego, 
+                y su significado puede interpretarse como "el que 
+                trae buenas noticias". Este simbolismo se relaciona 
+                con creencias tradicionales, donde los colibríes son 
+                considerados mensajeros del más allá, representando a los 
+                espíritus de los difuntos que regresan a visitar a sus seres 
+                queridos....
+            </div>
+
+            <div class="more-card" onclick="showModal(2)">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-title">
+                Datos curiosos
+            </div>
+
+            <div class="card-content">
+                - Defensores natos.
+                <p>
+                    A pesar de su pequeño tamaño, los colibríes son 
+                    increíblemente territoriales. Pueden enfrentarse a 
+                    otras aves, incluso más grandes, para proteger su espacio 
+                    y las flores de las que se alimentan.
+                </p>
+
+                - Vuelo único
+                <p>
+                    Son las únicas aves capaces de volar hacia atrás y 
+                    mantenerse suspendidas en el aire mien...
+                </p>
+            </div>
+
+            <div class="more-card" onclick="showModal(3)">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- <section class="carousel-simple">
+        
+        <h3>GNERO EUPHERUSA</h3>
+
+        <div class="carousel-container">
+            <div class="carousel-item">
+
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+    
+            </div>
+        </div>
+
+    </section> -->
+
+    <section class="carrusel-simple">
+        <h2 class="titulo-carrusel">Genero Eupherusa</h2>
+        <div class="carrusel">
+            <button class="btn prev">◀</button>
+            <div class="carrusel-contenedor">
+              <div class="carrusel-item">
+                <div class="imagenes">
+                  <img src="assets/img/eupherusa_ridgwayi_1.jpg" alt="Imagen 1">
+                  <img src="assets/img/eupherusa_ridgwayi_2.png" alt="Imagen 2">
+                  <img src="assets/img/eupherusa_ridgwayi_3.jfif" alt="Imagen 3">
+                </div>
+                <p class="texto">Eupherusa ridgwayi</p>
+              </div>
+
+              <div class="carrusel-item">
+                <div class="imagenes">
+                  <img src="assets/img/eupherusa_cyanophrys_1.jpeg" alt="Imagen 4">
+                  <img src="assets/img/eupherusa_cyanophrys_2.png" alt="Imagen 5">
+                  <img src="assets/img/eupherusa_cyanophrys_3.jfif" alt="Imagen 6">
+                </div>
+                <p class="texto">Eupherusa cyanophrys</p>
+              </div>
+
+              <div class="carrusel-item">
+                <div class="imagenes">
+                  <img src="assets/img/eupherusa_poliocerca_1.jpeg" alt="Imagen 7">
+                  <img src="assets/img/eupherusa_poliocerca_2.jfif" alt="Imagen 8">
+                  <img src="assets/img/eupherusa_poliocerca_3.jfif" alt="Imagen 9">
+                </div>
+                <p class="texto">Eupherusa poliocerca</p>
+              </div>
+
+              <div class="carrusel-item">
+                <div class="imagenes">
+                  <img src="assets/img/eupherusa_nigriventris_1.jfif" alt="Imagen 7">
+                  <img src="assets/img/eupherusa_nigriventris_2.jfif" alt="Imagen 8">
+                  <img src="assets/img/eupherusa_nigriventris_3.jfif" alt="Imagen 9">
+                </div>
+                <p class="texto">Eupherusa nigriventris</p>
+              </div>
+
+              <div class="carrusel-item">
+                <div class="imagenes">
+                  <img src="assets/img/eupherusa_eximia_1.jfif" alt="Imagen 7">
+                  <img src="assets/img/eupherusa_eximia_2.jfif" alt="Imagen 8">
+                  <img src="assets/img/eupherusa_eximia_3.jfif" alt="Imagen 9">
+                </div>
+                <p class="texto">Eupherusa eximia</p>
+              </div>
+
+            </div>
+            <button class="btn next">▶</button>
+        </div>
+    </section>
+
+    <section class="articulos">
+
+        <h2 class="articulos-title">Libros</h2>
+
+        <div class="section-container">
+
+            <article class="articulo">
+                <h3 class="articulo-number">01</h3>
+    
+                <p class="title-articulo">"Colibríes de México y Norteamérica" (2014), 
+                    de María del Coro Arizmendi y Humberto Berlanga, con ilustraciones de
+                    Marco Antonio Pineda
+                </p>
+    
+                <p class="description-articulo">
+                    Analiza las especies de colibríes de la región. Destaca su biología, 
+                    distribución y conservación, con datos científicos, visuales y mapas. 
+                    Publicado por CONABIO, es clave para la divulgación y educación ambiental.
+                </p>
+                <a href="https://www.researchgate.net/publication/280741692_Colibries_de_Mexico_y_Norteamerica_Hummingbirds_of_Mexico_and_North_America " 
+                target="_blank"
+                class="see_book">Ver libro>></a>
+            </article>
+    
+            <article class="articulo">
+                <h3 class="articulo-number">02</h3>
+    
+                <p class="title-articulo">"Colibríes del Centro Occidente de México. Guía Ilustrada" (2023)</p>
+    
+                <p class="description-articulo">
+                    presenta información sobre 24 especies de colibríes migratorios y 
+                    residentes en el Centro Occidente de México. Elaborada por Sarahy 
+                    Contreras, Luz Mariana Nava y Óscar Cárdenas, aborda su ecología, 
+                    distribución y respuesta a ambientes post-incendio. Incluye ilustraciones 
+                    y mapas detallados para su identificación y conservación.
+                </p>
+
+                <a href="https://www.researchgate.net/publication/376480424_Colibries_del_Centro_Occidente_de_Mexico_Guia_Ilustrada" 
+                target="_blank"
+                class="see_book">Ver libro>></a>
+            </article>
+
+            <article class="articulo">
+                <h3 class="articulo-number">03</h3>
+    
+                <p class="title-articulo">“Colibríes de México"</p>
+    
+                <p class="description-articulo">
+                    una guía interactiva disponible en la plataforma 
+                    iCartesiLibri, desarrollada por el Proyecto Descartes. 
+                    Esta herramienta electrónica proporciona información educativa 
+                    y científica sobre la biología, ecología y características de 
+                    diversas especies de colibríes en México. Además, utiliza recursos 
+                    gráficos interactivos para facilitar el aprendizaje y la comprensión 
+                    de estos fascinantes polinizadores
+                </p>
+
+                <a href="https://proyectodescartes.org/iCartesiLibri/materiales_didacticos/Colibri/?page=2" 
+                target="_blank"
+                class="see_book">Ver libro>></a>
+            </article>
+
+        </div>
+
+    </section>
+
+    <div class="cards-modal-off" id="modal">
+        <div class="modal-container">
+            <h2 class="modal-title" id="titulo-modal"></h2>
+            <div class="modal-info" id="contenido-modal"></div>
+
+            <div class="close-modal" onclick="closeModal()"> 
+                <span class="text">Cerrar</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
